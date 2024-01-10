@@ -18,16 +18,30 @@
             <li>Portfólio</li>
             <li>Orçamento</li>
             <li>
-                <div class="search-box">
-                    <button class="search">
+                <div class="search-box js-search-box">
+                    <button class="search js-btn-search">
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
                     <div class="search-input">
-                        <input type="text" placeholder="Pesquise aqui">
+                        <input type="text" class="js-input-search" placeholder="Pesquise aqui">
                     </div>
-                    <button class="close">
+                    <button class="close js-close">
                         <ion-icon name="close-outline"></ion-icon>
                     </button>
+
+                    <script>
+                        const search_box = document.querySelector('.js-search-box');
+                        const search_btn = document.querySelector('.js-btn-search');
+                        const btn_close = document.querySelector('.js-close');
+                        const input = document.querySelector('.js-input-search');
+                        search_btn.addEventListener('click', () => {
+                            search_box.classList.add('active');
+                        });
+                        btn_close.addEventListener('click', () => {
+                            search_box.classList.remove('active');
+                            input.value = '';
+                        });
+                    </script>
 
                     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
                     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
