@@ -1,5 +1,5 @@
 body {
-    font-family: Open Sans,sans-serif;
+    font-family: Dosis,sans-serif;
     text-transform: none;
 }
 
@@ -65,21 +65,99 @@ button {
 }
 
 .menu {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 8px 14px;
+    height: 60px;
+    /*padding: 8px 14px;*/
     position: relative;
     text-align: center;
 }
 
 ul li{
-    padding: 10px 14px;
+    color: #646464;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 10px 25px;
     display: inline-block;
     border-width: 1px;
 }
 
+li::after {
+    margin-top: 10px;
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: #00678C;
+    transition: 300ms;
+}
+
+li:hover::after {
+    width: 100%;
+  }
+
 li:hover {
     color: #00678C;
+    cursor: pointer;
+}
+
+/*.slide{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 695px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;
+}*/
+
+.slider {
+    margin: 0 auto;
+    width: 1170px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25px;
+    position: relative;
+}
+
+.slide img {
+    width: 1170px;
+    height: 600px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 1170px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
 }
 
 footer {
