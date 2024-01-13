@@ -77,6 +77,12 @@ button {
     outline: none;
 }
 
+.fixedspace {
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+}
+
 .menu {
     background-color: #fff;
     margin-top: -20px;
@@ -89,7 +95,7 @@ button {
 ul li {
     color: #000000;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px 25px;
     display: inline-block;
 }
@@ -114,6 +120,7 @@ li:hover {
 }
 
 .slider {
+    border-radius: 10px;
     margin: 0px auto;
     width: 1170px;
     height: 700px;
@@ -124,6 +131,7 @@ li:hover {
     width: 100%;
     height: 700px;
     display: flex;
+    background-color: #000;
 }
 
 .slides input {
@@ -132,7 +140,24 @@ li:hover {
 
 .slide {
     position: relative;
-    transition: 2s;
+    transition: 0s;    
+}
+
+@keyframes fade {
+    from {opacity: 0.2}
+    to {opacity: 1.2}
+}
+#radio1:checked ~ .first{
+    animation: fade 2s linear;
+}
+#radio2:checked ~ .first2{
+    animation: fade 2s linear;
+}
+#radio3:checked ~ .first3{
+    animation: fade 2s linear;
+}
+#radio4:checked ~ .first4{
+    animation: fade 2s linear;
 }
 
 .slide img {
@@ -221,6 +246,8 @@ li:hover {
 }
 
 article .conteudo {
+    margin-left: 220px;
+    margin-right: 220px;
     font-family: Open Sans, sans-serif;
     text-align: left;
     display: inline-block;
@@ -240,13 +267,28 @@ article .conteudo {
 }
 
 article p {
-    margin: 0px 30px 50px 35px;
+    margin: 0px 25px 50px 30px;
     font-size: 15px;
 }
 
 article h1 {
     font-size: 35px;
     text-align: center;
+}
+
+/* WhatsApp Icon */
+.whatsapp {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whatsapp img {
+    width: 80px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
 }
 
 footer .socials img {
@@ -261,12 +303,13 @@ footer {
 }
 
 .assinatura {
+    color: #666;
+    margin-top: 50px;
     text-align: center;
     font-size: 0.9em;
     padding: 8px;
     word-spacing: 5px;
     font-family: helvetica, sans-serif !important;
-    ;
     font-weight: 400;
 }
 
