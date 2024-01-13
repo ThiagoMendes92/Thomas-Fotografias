@@ -246,8 +246,8 @@ li:hover {
 }
 
 article .conteudo {
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: Open Sans, sans-serif;
     text-align: left;
     display: inline-block;
