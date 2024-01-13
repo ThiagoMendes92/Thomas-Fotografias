@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Pugliesi Fotografias</title>
+    <link rel="shortcut icon" type="image/jpg" href="" />
+    <link rel="stylesheet" href="/Front/style/style.css">
+</head>
+
+<body>
+    <header class="menu">
+        <ul>
+            <a href="/index.html"><li>Home</li></a>
+            <a href="Sobre.html"><li>Sobre</li></a>
+            <a href="TrabalhosRecentes.html"><li>Trabalhos Recentes</li></a>
+            <a href="Portifolio.html"><li>Portfólio</li></a>
+            <a href="Orçamento.html"><li>Orçamento</li></a>
+            <li>
+                <div class="search-box js-search-box">
+                    <button class="search js-btn-search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                    <div class="search-input">
+                        <input type="text" class="js-input-search" placeholder="Pesquise aqui">
+                    </div>
+                    <button class="close js-close">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                    <script>
+                        const search_box = document.querySelector('.js-search-box');
+                        const search_btn = document.querySelector('.js-btn-search');
+                        const btn_close = document.querySelector('.js-close');
+                        const input = document.querySelector('.js-input-search');
+                        search_btn.addEventListener('click', () => {
+                            search_box.classList.add('active');
+                        });
+                        btn_close.addEventListener('click', () => {
+                            search_box.classList.remove('active');
+                            input.value = '';
+                        });
+                    </script>
+
+                    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="fixedspace">        
+    </div>
+    <div class="new_works">
+        <h1>Trabalhos Recentes</h1>
+    </div>
+    <!-- WhastApp Button -->
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5516982085033" class="icon" target="_blank"><img src="/Front/img/WhatsApp_icon.png" alt="WhastApp"></a>
+    </div>
+    <footer>
+        <h2>Informações</h2>
+        <p>Tel: (16) 98208-5033</p>
+        <p>thomaspugliesi1997@gmail.com</p>
+        <p>Thomas Pugliesi</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/thomas_pugliesi/" class="icon" target="_blank"><img src="/Front/img/instagram.png" alt="instagram"></a>
+            <a href="http://" class="icon" target="_blank"><img src="/Front/img/facebook.png" alt="facebook"></a>
+            <a href="http://" class="icon" target="_blank"><img src="/Front/img/pinterest.png" alt="pinterest"></a>
+        </div>
+        <div class="assinatura">
+            <p>Criado <!--com <span class="heart">&#10084;</span>--> por <span>Thiago M</span></p>
+        </div>
+    </footer>
+    <script language="javascript" src="Front/script.js"></script>
+</body>
+
+</html>
