@@ -3,12 +3,16 @@
 body {
     font-family: 'Dosis', sans-serif;
     text-transform: none;
-    color: #333;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 h1 {
+    margin-top: 90px;
+    font-size: 36px;
+    text-align: center;
     color: #000;
-    font-weight: 600;
+    font-weight: 600;    
+    letter-spacing: 1.5px;
 }
 
 h2 {
@@ -83,6 +87,8 @@ button {
     height: 70px;
 }
 
+/* ------ MENU ------ */
+
 .menu {
     background-color: #fff;
     margin-top: -20px;
@@ -93,7 +99,7 @@ button {
 }
 
 ul li {
-    color: #000000;
+    color: rgba(0, 0, 0, 0.75);
     font-size: 16px;
     font-weight: 600;
     padding: 10px 25px;
@@ -118,6 +124,8 @@ li:hover {
     color: #00678C;
     cursor: pointer;
 }
+
+/* ------ SLIDE ------ */
 
 .slider {
     border-radius: 10px;
@@ -245,7 +253,9 @@ li:hover {
     text-align: center;
 }
 
-article .conteudo {
+/* ------ SOBRE ------ */
+
+.conteudo {
     margin-left: 10%;
     margin-right: 10%;
     font-family: Open Sans, sans-serif;
@@ -253,7 +263,7 @@ article .conteudo {
     display: inline-block;
     padding: 40px;
     line-height: 1.8em;
-    color: #666;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .conteudo1 {    
@@ -271,12 +281,111 @@ article p {
     font-size: 15px;
 }
 
-article h1 {
-    font-size: 35px;
-    text-align: center;
+/* ------ ORÇAMENTO ------ */
+
+.contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+    display: inline-block;
+    padding: 70px;
+    line-height: 1.8em;
+    color: rgba(0, 0, 0, 0.5);    
 }
 
-/* WhatsApp Icon */
+.contact h1 {
+    margin-bottom: 50px;
+}
+
+.contact h2 {
+    margin: 0px 0px 15px 30px;
+    font-size: 18px;
+}
+
+.contact p {
+    margin: 0px 25px 50px 30px;
+    font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contacts1 {
+    width: 50%;
+    float: left;
+}
+
+.contacts2 {
+    width: 50%;
+    float: right;
+}
+
+.contact-inp {
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    height: 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b1b1b1;
+    width: 100%;
+    font-family: inherit;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact textarea {
+    height: 100px;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b1b1b1;
+    width: 100%;
+    font-family: inherit;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact input::placeholder {
+    color: #b1b1b1;
+    font-size: 12px;
+}
+
+.contact textarea::placeholder {
+    color: #b1b1b1;
+    font-size: 12px;
+}
+
+.contact input:target {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8c0000;
+}
+
+#env-btn {
+    width:  calc(100% + 22px);
+    border: #00678C;
+    height: 45px;
+    font-size: 14px;
+    background: #00678C;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ------ WhatsApp Icon ------ */
+
 .whatsapp {
     margin: 0;
     padding: 0;
@@ -291,26 +400,35 @@ article h1 {
     font-size: 30px;
 }
 
+/* ------ Footer About ------ */
+
 footer .socials img {
-    width: 30px;
-    margin: 5px;
+    width: 35px;
+    margin: 10px;
     margin-bottom: 30px;
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
 }
 
+footer h2 {
+    font-size: 25px;
+    margin: 40px;
+}
+
 .assinatura {
-    color: #666;
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 50px;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 15px;
+    letter-spacing: 2px;
     padding: 8px;
     word-spacing: 5px;
-    font-family: helvetica, sans-serif !important;
+    font-family: helvetica, sans-serif;
     font-weight: 400;
+    line-height: 1.8em;
 }
 
 footer .heart {
