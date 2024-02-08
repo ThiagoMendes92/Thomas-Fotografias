@@ -131,7 +131,7 @@ li:hover {
 /* ------ SLIDE ------ */
 
 .slider {
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     margin: 0px auto;
     width: 1170px;
     height: 700px;
@@ -263,7 +263,7 @@ li:hover {
     margin-top: 100px;
     display: flex;
     width: 50%;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .conteudo {
