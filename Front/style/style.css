@@ -101,7 +101,7 @@ button {
     z-index: 1;
 }
 
-ul li {
+.menu ul li {
     color: rgba(0, 0, 0, 0.75);
     font-size: 16px;
     font-weight: 600;
@@ -109,7 +109,7 @@ ul li {
     display: inline-block;
 }
 
-li::after {
+.menu li::after {
     margin-top: 10px;
     content: '';
     width: 0px;
@@ -119,11 +119,11 @@ li::after {
     transition: 300ms;
 }
 
-li:hover::after {
+.menu li:hover::after {
     width: 100%;
 }
 
-li:hover {
+.menu li:hover {
     color: #00678C;
     cursor: pointer;
 }
@@ -263,7 +263,7 @@ li:hover {
     margin-top: 100px;
     display: flex;
     width: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .conteudo {
@@ -327,6 +327,21 @@ article p {
     filter: brightness(70%);
     cursor: pointer;
     position: relative;
+}
+
+/* ------ PORTFÓLIO ------ */
+
+.sub-menu {
+    background-color: #fff;
+    text-align: center;
+}
+
+.sub-menu li{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 /* ------ ORÇAMENTO ------ */
